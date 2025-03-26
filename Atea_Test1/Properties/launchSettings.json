@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Atea_Test1": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7003",
+      "launchBrowser": false
+    }
+  }
+}
