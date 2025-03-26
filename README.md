@@ -51,7 +51,5 @@ This project is an Azure Function-based system that periodically fetches weather
 1. Start the Azure Storage Emulator (if using local storage).
 
 1. Run the Azure Functions project:
-```sh
-func start
-
-### Running Locally
+  ```sh
+  func start
