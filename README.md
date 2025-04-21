@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an Azure Function-based system that periodically fetches weather data from OpenWeatherMap and logs the data into Azure Storage. 
+This project is a **ongoing** Azure Function-based system that periodically fetches weather data from OpenWeatherMap and logs the data into Azure Storage. 
 
 **This was a test from an interview process that needed to be done within one day only.**
 
