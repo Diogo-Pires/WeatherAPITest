@@ -2,7 +2,11 @@
 
 ## Overview
 
-This project is an Azure Function-based system that periodically fetches weather data from OpenWeatherMap and logs the data into Azure Storage. The system consists of:
+This project is an Azure Function-based system that periodically fetches weather data from OpenWeatherMap and logs the data into Azure Storage. 
+
+**This was a test from an interview process that needed to be done within one 1 day only.**
+
+The system consists of:
 
 - **Azure Timer Trigger Function**: Runs every minute to fetch weather data.
 - **Azure Table Storage**: Stores logs of success/failure attempts.
@@ -34,22 +38,40 @@ This project is an Azure Function-based system that periodically fetches weather
 ### Configuration
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/azure-weather-logger.git
-   cd azure-weather-logger
+   ```bash
+   git clone https://github.com/Diogo-Pires/WeatherAPITest.git
+   cd WeatherAPITest
+   ```
    
 1. Set up your local.settings.json:
-   ```sh
+   ```bash
    {
    "IsEncrypted": false,
    "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "OpenWeatherApiKey": "YOUR_API_KEY"}}
+   ```
 
  ### Running Locally
 1. Start the Azure Storage Emulator (if using local storage).
 
 1. Run the Azure Functions project:
-  ```sh
+  ```bash
   func start
+  ```
+
+## Usage
+
+ - The Timer Trigger function will execute every minute, fetching and storing weather data.
+ - Use the provided HTTP endpoints to query logs and retrieve specific weather data payloads.
+
+## Testing
+Run the unit tests using the following command:​
+```bash
+dotnet test
+  ```
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.​
+
